@@ -23,11 +23,12 @@ The quality of the vector (maximum cross-correlation) is in the `mcc` variable.
 
 Please cite:
 
-Anton Korosov, Sean Chua, Deep learning algorithm for sea ice drift retrieval from SAR imagery, 12th INTERNATIONAL WORKSHOP ON SEA ICE MODELLING, ASSIMILATION, OBSERVATIONS, PREDICTIONS AND VERIFICATION, 5 - 7 November 2024 | ESA,ESRIN | Frascati, Italy
+* Anton Korosov and Sean Chua, "Deep learning algorithm for sea ice drift retrieval from SAR imagery", 12th INTERNATIONAL WORKSHOP ON SEA ICE MODELLING, ASSIMILATION, OBSERVATIONS, PREDICTIONS AND VERIFICATION, 5 - 7 November 2024 | ESA,ESRIN | Frascati, Italy
 
+* Anton Korosov and Sean Chua, "SuperPoint-based Lagrangian Ice MOtion algorithm, superlimo-0.1.1", Zenodo, Dec. 18, 2024. doi: 10.5281/zenodo.14514307.
 
 ```
-@Conference{Korosov_etal_2024,
+@conference{Korosov_etal_2024a,
   author       = "Korosov, Anton and Chua, Sean",
   title        = "Deep learning algorithm for sea ice drift retrieval from SAR imagery",
   booktitle    = "12th INTERNATIONAL WORKSHOP ON SEA ICE MODELLING, ASSIMILATION, OBSERVATIONS, PREDICTIONS AND VERIFICATION",
@@ -35,5 +36,15 @@ Anton Korosov, Sean Chua, Deep learning algorithm for sea ice drift retrieval fr
   month        = "11",
   publisher    = "ESA",
   url          = "https://www.dropbox.com/scl/fi/gdfg2fet81pgs2o0cnauj/5.-Korosov.pdf?rlkey=ydcgkorfhsxi8pcnfv2qplbv2&e=1&dl=0"
+
+@software{Korosov_etal_2024b,
+  author       = {Korosov, Anton and Chua, Sean},
+  title        = {SuperPoint-based Lagrangian Ice MOtion algorithm, superlimo-0.1.1},
+  month        = dec,
+  year         = 2024,
+  publisher    = {Zenodo},
+  version      = {0.1.1},
+  doi          = {10.5281/zenodo.14514307},
+  url          = {https://doi.org/10.5281/zenodo.14514307},
 }
 ```
