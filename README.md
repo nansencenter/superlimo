@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/905130076.svg)](https://doi.org/10.5281/zenodo.14514306)
+
 # SuperLIMo
 SuperPoint-based Lagrangian Ice MOtion algorithm
 
