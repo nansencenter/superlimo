@@ -1,3 +1,5 @@
+import importlib.resources as pkg_resources
+
 from types import SimpleNamespace
 from superlimo.base_model import BaseModel
 from superlimo.superpoint_open import VGGBlock
@@ -39,7 +41,11 @@ class SuperLIMo(BaseModel):
             VGGBlock(channels[-1], c, 3),
             VGGBlock(c, self.conf.descriptor_dim, 1, relu=False),
         )
-        self.load_weights(conf.checkpoint_url, conf.device)
+        if conf.checkpoint_url in [None, 'default']:
+            checkpoint_url = pkg_resources.files('superlimo').joinpath('weights.pth')
+        else:
+            checkpoint_url = conf.checkpoint_url
+        self.load_weights(checkpoint_url, conf.device)
 
     def load_weights(self, checkpoint_url, device):
         self.load_state_dict(torch.load(

@@ -3,7 +3,6 @@ import argparse
 import numpy as np
 from omegaconf import OmegaConf
 import torch
-import importlib.resources as pkg_resources
 
 from superlimo.lib import get_n, get_destimation_domain, warp, clip_and_pad_images, keypoints2position, get_pm_grids, pattern_matching, apply_pm_corrections
 from superlimo.superlimo import SuperLIMo
@@ -20,8 +19,6 @@ def parse_args():
 def main():
     args = parse_args()
     conf = OmegaConf.load(args.config)
-    if conf.checkpoint_url in [None, 'default']:
-        conf.checkpoint_url = pkg_resources.files('superlimo').joinpath('weights/weights')
 
     # load data from input images
     n0 = get_n(args.file0)

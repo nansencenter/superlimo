@@ -48,4 +48,6 @@ derive-drift = "superlimo.derive_drift:main"
 
 [tool.setuptools]
 packages = ["superlimo"]
-include_package_data = true
+
+[tool.setuptools.package-data]
+"superlimo" = ["weights.pth"]
