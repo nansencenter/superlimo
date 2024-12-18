@@ -32,7 +32,6 @@ classifiers = [
 keywords = ["sea ice drift", "SAR", "computer vision", "machine learning"]
 dependencies = [
     "numpy",
-    "opencv",
     "matplotlib",
     "pyproj",
     "scipy",
