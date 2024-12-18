@@ -1,5 +1,7 @@
 """
 Base class for trainable models.
+Taken from Glue-Factory codebase:
+https://github.com/cvg/glue-factory/blob/main/gluefactory/models/base_model.py
 """
 
 from abc import ABCMeta, abstractmethod
