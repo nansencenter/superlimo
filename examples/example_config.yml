@@ -1,0 +1,23 @@
+proj4: +proj=stere +lon_0=28.9 +lat_0=82.96 +lat_ts=80 +ellps=WGS84 +datum=WGS84 +units=m
+extent: -100000 -80000 100000 80000
+sar_resolution: 100
+min_sar_signal: 0.005
+plim:
+- 1
+- 99
+device: cpu
+checkpoint_url:
+superlimo_min_score: 0.1
+matcher_norm: NORM_L2
+matcher_max_distance: 0.8
+matcher_max_drift: 0.2
+matcher_ransac_model: AffineTransform
+matcher_ransac_ratio: 0.2
+matcher_ransac_threshold: 0.01
+matcher_lowe_ratio: 0.9
+matcher_plot: false
+matcher_use_ransac: true
+pm_step: 20
+pm_pol: hh
+pm_template_size: 33
+pm_border: 32
