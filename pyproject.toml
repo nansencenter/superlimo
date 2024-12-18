@@ -43,5 +43,9 @@ dependencies = [
 urls = {Repository = "https://github.com/nansencenter/py-thesaurus-interface"}
 dynamic = ["version"]
 
-[project.scripts]
-derive_drift = "scripts.derive_drift:main"
+[project.entry-points.console_scripts]
+derive-drift = "superlimo.derive_drift:main"
+
+[tool.setuptools]
+packages = ["superlimo"]
+include_package_data = true
